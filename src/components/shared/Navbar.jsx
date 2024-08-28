@@ -1,3 +1,4 @@
+/* eslint-disable no-constant-condition */
 import { memo } from "react"
 import { Fragment, useState } from "react"
 import {
