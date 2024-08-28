@@ -1,6 +1,7 @@
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom"
 
 import { lazy } from "react"
+import ProductsPage from "./pages/ProductsPage"
 const Footer = lazy(() => import("./components/shared/Footer"))
 const HomePage = lazy(() => import("./pages/HomePage"))
 const Navbar = lazy(() => import("./components/shared/Navbar"))
@@ -25,6 +26,10 @@ function App() {
           path: "/",
           element: <HomePage />,
         },
+        {
+          path:"/products",
+          element : <ProductsPage />
+        }
       ],
     },
   ])
